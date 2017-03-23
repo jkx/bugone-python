@@ -4,7 +4,7 @@ import fastentrypoints
 with open('README.md') as f:
     long_description = f.read()
 
-VERSION = "0.4"
+VERSION = "0.5"
 
 
 setup(

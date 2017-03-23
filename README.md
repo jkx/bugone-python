@@ -25,6 +25,16 @@ Thu Mar 23 09:16:48 2017 => Message [21330] from 22 to 255
 - (22.3) -> (255.41) = 491
 ```
 
+## Install ## 
+To install simply use pip 
+```shell
+pip install bugone 
+```
+
+
+
 ## Links ##
-* [bugOne](http://dwb.ilhost.fr/doku.php)
+* [PyPI Entry](https://pypi.python.org/pypi/bugone/)
+* [bugOne git](https://github.com/jkx/DIY-Wireless-Bug)
+* [DIY Wireless Bug](http://dwb.ilhost.fr/)
 * [mux_serial](https://github.com/marcelomd/mux_serial)

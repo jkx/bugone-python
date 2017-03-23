@@ -18,8 +18,8 @@ def log(pkt):
     print("%s => Message [%d] from %d to %d" % (now,pkt.counter,pkt.src,pkt.dst))
     for (s_id,d_id,val) in pkt.values:
         print("- (%d.%d) -> (%d.%d) = %d" % (pkt.src,s_id,pkt.dst,d_id,val))
-    
 
+        
 def hexdump(pkt):
     print(pkt)
     cnt = 1
@@ -67,8 +67,10 @@ def main():
             assert False, "unknow option"
 
     if cn:
-        run(cn,display_func)
-            
+        try:
+            run(cn,display_func)
+        except KeyboardInterrupt:
+            print("Bye Bye")
             
 if __name__ == '__main__':
     main()

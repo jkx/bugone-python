@@ -57,12 +57,14 @@ class TCPMux:
             return None
         size = ord(buf)
         
-        data = ''
+        data = bytes()
         while 1:
             data = data + self.socket.recv(256)
             if len(data) > size:
                 break
-
+            
+        # py3 quick & dirty patch bytes => char
+        data = data.decode('latin-1') 
         checksum = ord(data[-1])
         data = data[0:-1]
 

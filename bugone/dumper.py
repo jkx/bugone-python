@@ -4,7 +4,7 @@ from __future__ import print_function
 import sys
 import getopt
 import time
-import connector,bugnet
+from . import connector,bugnet
 
 
 def usage():

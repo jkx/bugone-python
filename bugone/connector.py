@@ -24,6 +24,7 @@ class Serial:
             return None
         size = ord(buf)
         data = self.port.read(size)
+        data = data.decode('latin-1') 
         if (len(data) != size):
             return None
         checksum = ord(self.port.read())
